@@ -1,1 +1,2 @@
-/* You can add global styles to this file, and also import other style files */
+*{margin:0;padding:0}li{list-style:none}img{border:0}input,button{outline:0;border:0}body{background:#f1f1f1}.border-radius5,.listBtn{-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px}.listBtn{padding:5px;font-size:12px;text-align:center;background:#3fafe8;color:#fff}.fixBotton{position:fixed;left:0;bottom:0;text-align:center;background:#3fafe8;padding:12px 0;width:100%;color:#fff;font-size:16px}.banner{width:100%;float:left}.cardMenu{width:100%;float:left}.weui-cells{margin-top:0;font-size:15px}
+/*# sourceMappingURL=styles.css.map */

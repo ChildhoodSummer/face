@@ -1,0 +1,19 @@
+<div class="pdb50">
+  <img src="assets/imgs/Banner_01.jpg" class="banner">
+  <div class="cardMenu">
+    <div class="weui-cells" *ngFor="let card of cardList;let i=index">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <p>{{card.OwnerName}}({{card.CardNum}})</p>
+        </div>
+        <button class="listBtn" (click)="delCard(card,i)">取消绑定</button>
+      </div>
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <p>{{card.Address}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fixBotton" (click)="addCard()">添加用户信息</div>

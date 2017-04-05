@@ -1,0 +1,20 @@
+<img src="assets/imgs/Banner_01.jpg" class="banner">
+<div class="cardMenu">
+  <div class="weui-cells weui-cells_form">
+    <div class="weui-cell">
+      <div class="weui-cell__hd"><label class="weui-label">缴费卡号</label></div>
+      <div class="weui-cell__bd">
+        <input class="weui-input" type="text" placeholder="请输入缴费卡号"  [(ngModel)]="cardnum" name="cardnum">
+      </div>
+    </div>
+    <div class="weui-cell">
+      <div class="weui-cell__hd"><label class="weui-label">代人缴费</label></div>
+      <div class="weui-cell__bd">
+        <input class="weui-input" type="text" placeholder="例如：给父母家缴费；可以空" [(ngModel)]="alias" name="alias"> 
+      </div>
+    </div>
+  </div>
+</div>
+{{cardnum}}
+<div class="fixBotton" (click)="add()">确认绑定</div>
+

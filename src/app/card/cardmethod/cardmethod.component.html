@@ -1,0 +1,12 @@
+<img src="assets/imgs/Banner_01.jpg" class="banner">
+<div class="cardMenu">
+  <div class="weui-cells">
+    <a class="weui-cell weui-cell_access" href="javascript:;" *ngFor="let bind of bdList" (click)="bindCard(bind)">
+      <div class="weui-cell__bd">
+        <p>{{bind.c_mode}}</p>
+      </div>
+      <div class="weui-cell__ft">
+      </div>
+    </a>
+  </div>
+</div>
