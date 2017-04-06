@@ -17,6 +17,7 @@ export class CardbynumComponent implements OnInit {
   private openid = this.ls.get('openid');
   private companyname = this.ls.get('companyname');
   private companyid = this.ls.get('companyid');
+  public cardnumInfo = this.ls.getObject('bkinfo');
 
   constructor(
     private ls: LocalStorage,

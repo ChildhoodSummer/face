@@ -6,6 +6,12 @@
         <input class="weui-input" type="text" placeholder="请输入缴费卡号"  [(ngModel)]="cardnum" name="cardnum">
       </div>
     </div>
+    <div class="weui-cell" *ngIf="cardnumInfo.isinputname==1">
+      <div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
+      <div class="weui-cell__bd">
+        <input class="weui-input" type="text" placeholder="请输入姓名" [(ngModel)]="username" name="username"> 
+      </div>
+    </div>
     <div class="weui-cell">
       <div class="weui-cell__hd"><label class="weui-label">代人缴费</label></div>
       <div class="weui-cell__bd">
@@ -14,6 +20,5 @@
     </div>
   </div>
 </div>
-{{cardnum}}
 <div class="fixBotton" (click)="add()">确认绑定</div>
 

@@ -44,8 +44,8 @@ export class CardmethodComponent implements OnInit {
         if (res == '') {
           this.bdList = homeBind;
         } else if (res.length == 1 && res[0].c_mode == '供热卡号') { //只有供热卡号一种方式绑卡
-          // localStorage.cardnumInfo = JSON.stringify(res[0]);
-          // $location.path('/addcard')
+          this.ls.setObject("bkinfo", res[0]);
+          this.router.navigateByUrl('card/cardbynum')
         } else {
           this.bdList = res
         }
